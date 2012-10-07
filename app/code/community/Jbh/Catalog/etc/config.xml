@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * This file is part of Jbh_Catalog for Magento.
+ *
+ * @license Lesser General Public License v3 (http://www.gnu.org/licenses/lgpl-3.0.txt)
+ * @author Jacques Bodin-Hullin <jacques@bodin-hullin.net>
+ * @category Jbh
+ * @package Jbh_Catalog
+ * @copyright Copyright (c) 2012 Jacques Bodin-Hullin (http://jacques.sh/)
+ */
+-->
+<config>
+    <modules>
+        <Jbh_Catalog>
+            <version>0.1.0</version>
+            <depends>
+                <Mage_Catalog />
+            </depends>
+        </Jbh_Catalog>
+    </modules>
+    <global>
+        <blocks>
+            <jbh_catalog>
+                <class>Jbh_Catalog_Block</class>
+            </jbh_catalog>
+        </blocks>
+        <models>
+            <jbh_catalog>
+                <class>Jbh_Catalog_Model</class>
+            </jbh_catalog>
+        </models>
+        <helpers>
+            <jbh_catalog>
+                <class>Jbh_Catalog_Helper</class>
+            </jbh_catalog>
+        </helpers>
+    </global>
+    <jbh>
+        <catalog>
+            <product>
+                <push>
+                    <modes>
+                        <default>
+                            <templates>
+                                <default>jbh/catalog/product/push/grid/default.phtml</default>
+                            </templates>
+                        </default>
+                        <list>
+                            <templates>
+                                <default>jbh/catalog/product/push/list/default.phtml</default>
+                            </templates>
+                        </list>
+                    </modes>
+                </push>
+            </product>
+        </catalog>
+    </jbh>
+</config>
